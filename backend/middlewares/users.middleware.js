@@ -4,7 +4,7 @@ const fs = require("fs");
 const userMiddlewares = {};
 
 const AuthStatus = {
-  TRUE: "true"
+  TRUE: "true",
 };
 
 userMiddlewares.checkAuth = (req, res, next) => {
@@ -29,7 +29,7 @@ userMiddlewares.timeStamp = (req, res, next) => {
     year: "numeric",
     hour: "2-digit",
     minute: "2-digit",
-    second: "2-digit"
+    second: "2-digit",
   });
 
   let logTxt = `
